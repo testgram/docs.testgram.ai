@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Testgram Docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Test on.',
   url: 'https://docs.testgram.ai',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -16,8 +16,7 @@ module.exports = {
         alt: 'Testgram',
         src: 'img/logo.svg',
         srcDark: 'img/logo_dark.svg', // Default to `logo.src`.
-        href: 'https://docusaurus.io/', // Default to `siteConfig.baseUrl`.
-        target: '_self', // By default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one).
+        href: 'https://docs.testgram.ai/', // Default to `siteConfig.baseUrl`.
       },
       items: [
         {
