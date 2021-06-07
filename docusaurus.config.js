@@ -38,10 +38,10 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
+            // {
+            //   label: 'Tutorial',
+            //   to: '/docs/intro',
+            // },
           ],
         },
         {
@@ -52,7 +52,7 @@ module.exports = {
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'Slack',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
@@ -64,10 +64,6 @@ module.exports = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
