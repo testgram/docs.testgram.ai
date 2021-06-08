@@ -3,7 +3,7 @@ module.exports = {
   title: 'Testgram Docs',
   tagline: 'Test on.',
   url: 'https://docs.testgram.ai',
-  baseUrl: '/docs.testgram.ai',
+  baseUrl: '/docs.testgram.ai/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
