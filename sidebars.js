@@ -26,7 +26,8 @@ module.exports = {
       type: 'category',
       label: 'Getting Started',
       items: [
-        'getting-started/demo-world'
+        'getting-started/demo-world',
+        'getting-started/install'
       ],
     },
   ],
