@@ -15,7 +15,7 @@ Testgram helps you find, capture, and debug these types of events before they ev
 If you are new here, you should check out our:
 * [Installation Guide](getting-started/install)
 * [Demo World](getting-started/demo-world)
-* [Core Concepts](docs/core/core)
+* [Core Concepts](core/concepts)
 
 ## Who uses Testgram?
 Our users are typically developers or QA engineers building web applications using modern JavaScript frameworks.
