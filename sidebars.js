@@ -15,20 +15,39 @@ module.exports = {
 
   // But you can create a sidebar manually
   tutorialSidebar: [
-    {
-      type: 'category',
-      label: 'Introduction',
-      items: [
-          'overview/intro'
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Getting Started',
-      items: [
-        'getting-started/demo-world'
-      ],
-    },
-  ],
-
+      "intro",
+      {
+        type: 'category',
+        label: '⭐ Getting Started',
+        items: [
+            'getting-started/install',
+            'getting-started/demo-world'
+        ],
+      },
+      {
+          type: 'category',
+          label: '⛏ The Basics',
+          items: [
+              'core/concepts',
+              'core/architecture'
+          ],
+      },
+      {
+          type: 'category',
+          label: '🗺 Data Collection',
+          items: [
+              'mapping/data',
+              'mapping/privacy',
+          ],
+      },
+      {
+          type: 'category',
+          label: '🧍‍♀️Players',
+          items: [
+              'players/player',
+              'players/goals',
+              'players/rules'
+          ],
+      },
+    ],
 };

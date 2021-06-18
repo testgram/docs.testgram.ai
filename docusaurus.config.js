@@ -69,17 +69,21 @@ module.exports = {
         {
           title: 'Community',
           items: [
+            // {
+            //   label: 'Stack Overflow',
+            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            // },
+            // {
+            //   label: 'Slack',
+            //   href: 'https://discordapp.com/invite/docusaurus',
+            // },
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Slack',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/testgram',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/testgramai',
             },
           ],
         },
@@ -87,9 +91,13 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Home',
+              href: 'https://testgram.ai',
             },
+            // {
+            //   label: 'Blog',
+            //   href: 'https://blog.testgram.ai',
+            // },
           ],
         },
       ],
@@ -105,7 +113,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/testgram/docs.testgram.ai',
         },
         blog: false,
         theme: {
