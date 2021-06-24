@@ -49,7 +49,7 @@ your GitHub credentials you would use across multiple repositories.
 :::
 
 ## Initializing
-First navigate to the root directory of the application corresponding to the world you are setting up.
+First, navigate to the root directory of the application corresponding to the world you are setting up.
 ```shell
 cd ~/my/app
 ```

@@ -22,7 +22,7 @@ API goals are thus are highly directed. It tells the Player you want to simulate
 
 ### URL Goals
 URL goals tell the Player to test each of the ways in which that particular page is used.
-Testgram first to find each of the unique interactable elements *and* APIs that correlate with a page. 
+Testgram first finds each of the unique interactable elements *and* APIs that correlate with a page. 
 These elements and APIs then become anchor points for the Player to find meaningful journeys around that page.
 
 :::info Goals map to multiple journeys

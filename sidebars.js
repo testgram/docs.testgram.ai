@@ -21,7 +21,7 @@ module.exports = {
         label: '⭐ Getting Started',
         items: [
             'getting-started/install',
-            'getting-started/demo-world'
+            // 'getting-started/demo-world'
         ],
       },
       {
@@ -34,20 +34,28 @@ module.exports = {
       },
       {
           type: 'category',
-          label: '🗺 Data Collection',
+          label: '🗺 World',
           items: [
-              'mapping/data',
-              'mapping/privacy',
+              'world/world',
+              'world/data',
+              'world/privacy',
           ],
       },
       {
           type: 'category',
           label: '🧍‍♀️Players',
           items: [
-              'players/player',
-              'players/goals',
-              'players/rules'
+              'player/player',
+              'player/goals',
+              'player/rules'
           ],
       },
+      // {
+      //     type: 'category',
+      //     label: '🚩Events',
+      //     items: [
+      //         'event/event',
+      //     ],
+      // },
     ],
 };
