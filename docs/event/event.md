@@ -1,5 +1,5 @@
 # Introduction to Events
-Events are issues that occur while a [Player](/players/player) is running a simulation.
+Events are issues that occur while a [Player](/player/player) is running a simulation.
 The events that Testgram listens for can be customized using our 
 
 Testgram listens for a few basic events out of the box, but this is one of the most customizable
