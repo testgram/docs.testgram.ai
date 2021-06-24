@@ -1,12 +1,12 @@
 # Data Practices
 
-## The tldr;
-* We take our data practice *super* seriously.
-* Testgram is focused on aggregate data, not user specific data. 
-  This means we care about the fact that users, on average type an email address in the login page, not the email address itself.
-* The data that reaches our servers cannot be reverse engineered to replicate the user’s exact session, or identify who the user was.
-* Testgram collects DOM level information, not user level information. (eg. the structure of the page, element attributes, etc.)
-* We're really just developers trying to build something useful for ourselves and our dev community. We don't want your customer data.
+## tl;dr
+- [x] We take our data practice *super* seriously.
+- [x] Testgram is focused on aggregate data, not user specific data. 
+- [x] This means we care about the fact that users on average type an email address in the login page, not the email address itself.
+- [x] The data that reaches our servers cannot be reverse engineered to replicate the user’s exact session, or identify who the user was.
+- [x] Testgram collects DOM level information, not user level information. (eg. the structure of the page, element attributes, etc.)
+- [x] We're really just developers trying to build something useful for ourselves and our dev community. We don't want your customer data.
 
 ## The Details: What data does Testgram collect?
 
@@ -38,7 +38,7 @@ Here's a nonexhaustive list of the types of data we collect:
 
 
 Testgram offers a number of custom configuration settings to exercise an even more granular control over the way that Testgram anonymizes sensitive information. 
-Most of these can be found in the `World > Settings` page
+Most of these can be found in the `World > Settings` page.
 
 ## Why does Testgram require this data?
 Testgram combines the behavior data to create high fidelity machine learning and statistical models that behave the way that your real users behave with your site.

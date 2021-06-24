@@ -1,9 +1,12 @@
 # Introduction to Players
 
-Players are the core of Testgram. They are the representation of your testing intent.
+Players are a specialized personas in your application that test specific areas of your application in many different ways.
+
+You can influence and customize a Player's behavior in two ways: through [Goals](goals) and through [Rules](rules).
+
+Players are the core of Testgram. Broadly, they are the representation of your testing intent.
 **It's your way to tell us what you care about testing, and how you'd like it tested.**
 
-It's often helpful way to think about a Player as a specialized persona who achieves one thing in your application in many different ways.
 
 :::tip Player ≠ Test Script
 A Player is not a single test case or a test script!
@@ -16,7 +19,7 @@ and anything else necessary to simulate around those goals.
 :::
 
 ## How do I create a Player?
-You can create a Player through the [Testgram Web Application](https://app.testgram.ai) on your `World` page.
+You can create a Player through the [Testgram Web Application](https://run.testgram.ai) on your `World` page.
 
 A Player has three key components:
 * **Name**: The name and subsequent handle by which you will deploy this player.
@@ -27,8 +30,8 @@ For example, if we're testing the login page, rules provide a declarative way to
 :::danger Anti-pattern
 We recommend creating many, smaller players to test specialized areas of your application rather than a few, large players.
 Creating smaller players ensures that each player is specialized and has the tools necessary to effectively simulate and test
-it's respective area of your application. Subsequently it makes interpreting results and debugging much easier. 
-It's the same reason we don't write all our code in one file anymore too.
+its respective area of your application. Subsequently, it makes interpreting results and debugging much easier. 
+It's the same reason we don't write all our code in one file anymore.
 
 If you're concerned about typing in the same rules over and over, there's also a way to i[nherit field rules from other players](rules) too!
 :::
@@ -36,11 +39,11 @@ If you're concerned about typing in the same rules over and over, there's also a
 ## Naming a Player
 We found that giving a name to our players helps us imagine them as personas testing our applications.
 For example, when filling out the field rules for "Checkout Cindy" we would ask ourselves,
-"What would Cindy type into the email field as she was checking out?" and "Which credit card number would she use?". 
-As a result, it helped us build a cohesive Player that would simulate multiple journeys cohesively.
+"What would Cindy type into the email field as she is checking out?" and "Which credit card number would she use?". 
+As a result, it helped us build a cohesive Player that can simulate multiple journeys.
 
 *Not to mention, naming your Players makes everything just that much more fun.*
 
 ## Checkout Cindy (Example)
-We often use an demo player called **"Checkout Cindy"** who's built to test the breadth of ways that people would checkout in our demo app.
+We often use an demo player called **"Checkout Cindy"** who's built to test the breadth of ways that people checkout in our demo app.
 She is referenced on the [goals](goals#checkout-cindys-goals-example) and [rules](rules#checkout-cindys-goals-example) page.
