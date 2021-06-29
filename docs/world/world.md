@@ -5,7 +5,7 @@ A **World** is your application. We continuously collect data about how people a
 Your World naturally changes over time as new pages, APIs, or elements get introduced.
 Testgram keeps up with your World through the data it collects.
 
-## The Components of World 
+## The Components of a World 
 A World is natural grouping of all the data, Players, and team members necessary to test **one** application.
 A World has: 
 * **Data:** Each environment/URL where your application is deployed is part of the same World. 

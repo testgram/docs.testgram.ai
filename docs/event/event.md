@@ -58,9 +58,6 @@ Testgram constantly watches for the events specify, and always keep a look out f
 An event is captured with all of it's contextual metadata along with a live step-by-step browser replay of the steps that led up to it. This makes reproducing 
 an event much easier.
 
-
-
-
 ## Architecture
 In a Player runtime, Testgram exposes the `testgram.event({...})` function in the browser's context.
 
