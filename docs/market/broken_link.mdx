@@ -1,0 +1,23 @@
+# testgram/broken_link
+
+**Tags:** `javascript` `link` `anchor` `<a>` `href`
+
+**Created by:** Animesh Koratana
+
+*Last Updated: June 28, 2021*
+
+## Install
+Run the following command in your project directory to install this module.
+```bash
+tg install testgram/broken_link
+```
+
+## Description
+This module listens for any`<a>` tags that get created or modified during the application runtime and ensures that they
+do not respond back with a status code of [`404`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404) or [`405`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405)
+(essentially making sure the resource resolves and the link is not broken).
+
+### Implementation
+import Gist from 'react-gist';
+
+<Gist id="6b6decb8f3465b5644e90af9c3dd9be4"/>

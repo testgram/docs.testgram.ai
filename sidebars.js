@@ -56,6 +56,14 @@ module.exports = {
       //     items: [
       //         'event/event',
       //     ],
-      // },
+      // }
     ],
+    marketSidebar: [
+        "market",
+        "market/jserror",
+        "market/unhandledrejection",
+        "market/consoleerror",
+        "market/text_overflow",
+        "market/broken_link"
+    ]
 };

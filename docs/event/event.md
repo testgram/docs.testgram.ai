@@ -1,5 +1,16 @@
 # Introduction to Events
 Events are issues that occur while a [Player](/player/player) is running a simulation.
+
+It's easiest to compare these to the types of events that you would send a tool like Sentry, Datadog, or Splunk.
+
+The types of Events are highly configurable using: 
+* Listeners (Plugins): 
+* Custom Event API:
+
+## Event API
+
+
+
 The events that Testgram listens for can be customized using our 
 
 Testgram listens for a few basic events out of the box, but this is one of the most customizable
@@ -21,7 +32,7 @@ You can add your own custom event listeners
 
 As a Player is running a Simulation, it is looking for specific **Events**.
 
-## Finding Events, not Assertions
+## Testgram finds Events, not Assertions
 Testgram takes a monitoring, event driven approach to finding issues in your application.
 This gives us a couple of architectural advantages that enable some of the best things in Testgram. 
 

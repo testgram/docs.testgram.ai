@@ -25,7 +25,7 @@ yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2
 ```
 
 ## Installing
-The CLI is the primary interface to Testgram where you will run simulations, view discoveries & errors, and get helpful debugging/playback information. 
+The CLI is the primary interface for Testgram where you will run simulations, view discoveries & errors, and get helpful debugging/playback information. 
 Use npm or Yarn to install the Testgram CLI on your computer.
 ### Install Testgram via `npm`
 ```shell
@@ -40,12 +40,12 @@ yarn global testgram
 This single command:
 * Downloads the Testgram `npm` package
 * Downloads the browser binaries Testgram needs to run simulations on your machine
-* Exposes the global `tg` command to run Testgram simulations and view its results
+* Exposes the global `tg` command to run Testgram commands
 
 :::tip Using Testgram for Multiple Applications
-If you are using Testgram for multiple worlds or applications, it is recommended to just install it once globally. 
-You can use the same installation to intitialize and run across mutltiple worlds in your system. Think of this similar to 
-your GitHub credentials you would use across multiple repositories.
+Testgram should only be installed once, even if you are using Testgram for multiple applications/companies. 
+You can use the same installation to initialize and run across multiple worlds in your system. 
+Think of this similar to your GitHub credentials you would use across multiple repositories.
 :::
 
 ## Initializing
@@ -59,7 +59,7 @@ Once you have your token in your application root directory, initialize your Tes
 tg init $PERSONAL_WORLD_TOKEN
 ```
 
-In this step, the cli creates a folder called `testgram` under which we will store any world specific configuration options you set up.
+In this step, the CLI creates a folder called `testgram` under which we will store any world specific configuration options you set up.
 
 
 
