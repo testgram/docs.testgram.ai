@@ -37,14 +37,20 @@ module.exports = {
         href: 'https://docs.testgram.ai/', // Default to `siteConfig.baseUrl`.
       },
       items: [
-        // {
-        //   type: 'doc',
-        //   docId: 'intro',
-        //   position: 'left',
-        //   label: 'Docs',
-        // },
         {
-          href: 'https://app.testgram.ai',
+          type: 'doc',
+          docId: 'intro',
+          position: 'left',
+          label: 'Docs',
+        },
+        {
+          type: 'doc',
+          docId: 'market',
+          position: 'left',
+          label: 'Market',
+        },
+        {
+          href: 'https://run.testgram.ai',
           label: 'Get Started',
           position: 'right',
         },
@@ -110,10 +116,7 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/testgram/docs.testgram.ai',
+          sidebarPath: require.resolve('./sidebars.js')
         },
         blog: false,
         theme: {

@@ -1,20 +1,20 @@
 # Data Practices
 
 ## tl;dr
-- [x] We take our data practice *super* seriously.
-- [x] Testgram is focused on aggregate data, not user specific data. 
-- [x] This means we care about the fact that users on average type an email address in the login page, not the email address itself.
-- [x] The data that reaches our servers cannot be reverse engineered to replicate the user’s exact session, or identify who the user was.
-- [x] Testgram collects DOM level information, not user level information. (eg. the structure of the page, element attributes, etc.)
-- [x] We're really just developers trying to build something useful for ourselves and our dev community. We don't want your customer data.
+- We take our data practice *super* seriously.
+- Testgram is focused on aggregate data, not user-specific data. 
+- This means we care about the fact that users on average type an email address in the login page, not the email address itself.
+- The data that reaches our servers cannot be reverse engineered to replicate the user’s exact session or identify who the user was.
+- Testgram collects DOM-level information, not user-level information. (eg. the structure of the page, element attributes, etc.)
+- We're really just developers trying to build something useful for ourselves and our dev community. We don't want your customer data.
 
 ## The Details: What data does Testgram collect?
 
 Testgram’s behavior modeling and learning systems try to build a high fidelity snapshot of your application’s steady-state usage. 
-In order to do this, Testgram requires you to insert a javascript snippet into your web application code. 
+To do this, Testgram requires you to insert a javascript snippet into your web application code. 
 Upon initialization, this snippet opens an encrypted web socket connection from the end user’s browser to Testgram’s servers to transport data.
 
-Here's a nonexhaustive list of the types of data we collect:
+Here's a non-exhaustive list of the types of data we collect:
 
 ### Usage Data
 * Clicks 
@@ -37,8 +37,8 @@ Here's a nonexhaustive list of the types of data we collect:
 * Session duration
 
 
-Testgram offers a number of custom configuration settings to exercise an even more granular control over the way that Testgram anonymizes sensitive information. 
-Most of these can be found in the `World > Settings` page.
+Testgram offers several custom configuration settings to exercise even more granular control over the way that Testgram anonymizes sensitive information. 
+Most of these can be found on the `World > Settings` page.
 
 ## Why does Testgram require this data?
 Testgram combines the behavior data to create high fidelity machine learning and statistical models that behave the way that your real users behave with your site.
@@ -58,7 +58,7 @@ All of our databases (all located in AWS) are encrypted at rest.
 Each account’s data is logically separated, and access to data is protected by authentication and authorization controls.
 Testgram production data is both processed and stored within Amazon Web Service’s data centers. 
 All Amazon data centers that process Testgram data are located in the US. 
-Amazon’s data centers are world-renowned for their state of the art security systems. 
+Amazon’s data centers are world-renowned for their state-of-the-art security systems. 
 
 If you have customers in the EU or are located in the EU, you will need to sign a Data Processing Agreement (DPA) with Testgram to allow for the transfer of data to these US data centers.
 

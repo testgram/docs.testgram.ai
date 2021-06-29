@@ -1,17 +1,16 @@
 # Introduction to Players
 
-Players are a specialized personas in your application that test specific areas of your application in many different ways.
-
-You can influence and customize a Player's behavior in two ways: through [Goals](goals) and through [Rules](rules).
+Players are specialized personas in your application that test specific areas of your application in many different ways.
 
 Players are the core of Testgram. Broadly, they are the representation of your testing intent.
 **It's your way to tell us what you care about testing, and how you'd like it tested.**
 
+You can influence and customize a Player in two ways: through [Goals](goals) and through [Rules](rules).
 
 :::tip Player ≠ Test Script
 A Player is not a single test case or a test script!
-In fact at runtime, one player can translate to tens, sometimes even hundreds of individual tests
-depending on the number of goals your player has and the size of your applicaiton.
+In fact, at runtime, one player can translate to tens, sometimes even hundreds of individual tests
+depending on the number of goals your player has and the size of your application.
 
 This is the power of Testgram!
 You tell us what to test (goals), and we'll translate it to the actual clicks, types, drags, keystrokes,
@@ -23,14 +22,14 @@ You can create a Player through the [Testgram Web Application](https://run.testg
 
 A Player has three key components:
 * **Name**: The name and subsequent handle by which you will deploy this player.
-* [**Goals**](goals): URLs or APIs that the Player is supposed to target it's testing around. 
+* [**Goals**](goals): URLs or APIs that the Player is supposed to target their testing around. 
 * [**Rules**](rules): A set of rules (most often field rules) that tell the Player how to test those areas.
 For example, if we're testing the login page, rules provide a declarative way to tell us what username and password to use.
 
 :::danger Anti-pattern
 We recommend creating many, smaller players to test specialized areas of your application rather than a few, large players.
 Creating smaller players ensures that each player is specialized and has the tools necessary to effectively simulate and test
-its respective area of your application. Subsequently, it makes interpreting results and debugging much easier. 
+the respective area of your application. Subsequently, it makes interpreting results and debugging much easier. 
 It's the same reason we don't write all our code in one file anymore.
 
 If you're concerned about typing in the same rules over and over, there's also a way to i[nherit field rules from other players](rules) too!
@@ -45,5 +44,5 @@ As a result, it helped us build a cohesive Player that can simulate multiple jou
 *Not to mention, naming your Players makes everything just that much more fun.*
 
 ## Checkout Cindy (Example)
-We often use an demo player called **"Checkout Cindy"** who's built to test the breadth of ways that people checkout in our demo app.
+We often use a demo player called **"Checkout Cindy"** who is built to test the breadth of ways that people checkout in our demo app.
 She is referenced on the [goals](goals#checkout-cindys-goals-example) and [rules](rules#checkout-cindys-goals-example) page.
