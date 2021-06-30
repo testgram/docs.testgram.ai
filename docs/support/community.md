@@ -84,3 +84,5 @@ You’ve harnessed the power of Testgram and the community, and you now have a k
 Try not to be a negative nancy. Nobody likes a negative nancy. Every perspective has value, foster a feeling of collective creativity when you’re interacting in the slack!
 
 Happy Slacking!
+
+Credit: getdbt.com for Slack channel best practices
