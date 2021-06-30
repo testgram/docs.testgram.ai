@@ -9,9 +9,7 @@ We’ve created a list of tips to help get the most out of the community:
 
 # Tip 1: Search before posting
 
-This seems like an obvious statement, but asking the community for help right off the bat restricts the ability for you to learn from the problem in an actionable way.
-
-A few good ways to push yourself to learn without asking for an answer to a specific issue:
+Asking the community for help right off the bat restricts the ability for you to learn from the problem in an actionable way. A few good ways to push yourself to learn without asking for an answer to a specific issue:
 
 * Use the docs. These will continue to grow as our understanding of the product and user grows, but from the jump, many of the high level answers you are looking for will live here.
 * Search the existing slack conversations. Maybe you find the exact problem, maybe you find something similar, there’s likely to be some crossover from other conversations that you can apply to what you’re hoping to achieve.
