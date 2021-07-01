@@ -1,8 +1,9 @@
 # Core Concepts
 Testgram is a new way of testing web applications using artificial intelligence.
 
-The whole intention of Testgram (and what makes it very different from other testing tools) is that we
-scalably test the breadth and depth of your application by simulating a large number of real user interactions.
+Testgram takes a very different approach to testing. 
+We use AI-driven simulations as a way to test your web application.
+Our platform is built to help you easily create and deploy these simulations.
 
 In the end, our goal is to help you build confidence in your code through early detection.
 
@@ -44,10 +45,14 @@ or even create custom ones specific to your application.
 ## Summary
 Testgram is a very different way of testing.
 What it means to create a 'test', run a 'test', and get feedback looks different in Testgram.
-1. We collect data to learn your [World](/world/world). The World keeps learning your application and adjusts as changes are made.
-2. Instead of writing a test, you create a [Player](/player/player). Players run multiple tests based off their goals.
-3. Instead of running a test, you run a [Simulation](/simulation/simulation). Simulations are based on real user behavior and not a user story or assumed interactions.
-4. Instead of assertions, we capture [Events](/event/event). You can focus on the errors that are critical to you like slow response times, Javascript errors, or broken links.
+1. **We collect data to learn your [World](/world/world).** 
+   The World keeps learning your application and adjusts as changes are made.
+2. **Instead of writing a test, you create a [Player](/player/player).**
+   Players run multiple tests based off their goals.
+3. **Instead of running a test, you run a [Simulation](/simulation/simulation).**
+   Simulations are based on real user behavior and not a user story or assumed interactions.
+4. **Instead of assertions, we capture [Events](/event/event).**
+   You can focus on the errors that are critical to you like slow response times, Javascript errors, or broken links.
 
 
 
