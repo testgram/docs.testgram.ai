@@ -14,8 +14,6 @@ At Testgram, we often talk about taking a blank slate, first principles approach
 
 ### Testgram gets better with time and usage.
 Today, tests are often written with a certain snapshot of the application in mind - specific use cases, states, or clickpaths.
-
-Today, tests are often written with a certain snapshot of the application in mind - specific use cases, tags, or clickpaths.  
 So, when your application changes, traditional tests break - and this just gets worse with time.
 
 Use cases are missed, new code is introduced and old code removed, and ultimately your tests begin failing.
