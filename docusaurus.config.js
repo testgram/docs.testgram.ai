@@ -13,14 +13,6 @@ module.exports = {
     algolia: {
       apiKey: 'd21e560a9a1d7e7d9e67f91ce6b70c51',
       indexName: 'testgram',
-
-      // Optional: see doc section below
-      contextualSearch: true,
-
-      // Optional: Algolia search parameters
-      searchParameters: {},
-
-      //... other Algolia params
     },
     colorMode: {
       defaultMode: 'light',
