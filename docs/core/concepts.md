@@ -1,10 +1,18 @@
 # Core Concepts
 Testgram is a new way of testing web applications using artificial intelligence.
 
-Testgram takes a very different approach to testing. 
-We use AI-driven simulations as a way to test your web application.
-Our platform is built to help you easily create and deploy these simulations.
+We take a very different approach to testing. Testgram differs from traditional testing in two key ways: 
+1. **Testgram tests through simulations, not scripts.** We use data-driven simulations as a way to test your web application. 
+   While an individual script may test one specific path through an application, a single simulation tests 
+   can tens or even hundreds of unique paths. This is important because it allows us to test modern applications, 
+   in *all the ways that they're really used*.
+2. **Testgram takes an event monitoring approach to understanding quality.**
+   There are no assertions in Testgram. 
+   Instead during a simulation, Testgram watches and listens for a configured set of events that occur on the browser. 
+   These events can be errors, rejections, logs, formatting issues, performance issues, and can be customized / configured to
+   the events that you care about. 
 
+Everything in our platform is built to help you easily create and deploy these simulations.
 In the end, our goal is to help you build confidence in your code through early detection.
 
 ## Testgram is Simple
@@ -44,7 +52,7 @@ or even create custom ones specific to your application.
 
 ## Summary
 Testgram is a very different way of testing.
-What it means to create a 'test', run a 'test', and get feedback looks different in Testgram.
+The way we create a 'test', run a 'test', and get feedback looks very different in Testgram.
 1. **We collect data to learn your [World](/world/world).** 
    The World keeps learning your application and adjusts as changes are made.
 2. **Instead of writing a test, you create a [Player](/player/player).**

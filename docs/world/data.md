@@ -25,7 +25,7 @@ production data.
 Each world has a unique snippet associated with it so that we can associate the data we collect with your world. 
 You can find your world's snippet in the `World > Settings`. It will look something like: 
 ```html
-<script src="http://sim.testgram.ai/js/world/{YOUR_WORLD_ID}" type="text/javascript"></script>
+<script src="https://sim.testgram.ai/js/world/{YOUR_WORLD_ID}" type="text/javascript"></script>
 ```
 Directly inject the Javascript snippet as the first tag in the `<head>` of your `index.html` file.
 The same snippet can be used across all environments (eg. you can use the same snippet in your local, QA, staging, or even production environments).
@@ -38,8 +38,9 @@ It's the best way to ensure that the data we collect remains fresh and your simu
 your dev, QA, or any other pre-prod environments.
 
 ### Ignoring Certain Domains
-If you want to collect data from all environments *except* a certain environment, you can ignore certain domains. 
-You can set this up through your `World > Settings` page.
+If you want to collect data from all environments *except* a certain environment, you can ignore certain domains.
+If you'd like this configured, please reach out to us at `support@testgram.ai`. We're building a setting page soon 
+so you can configure this yourself.
 
 ## Option Two: Manual Mapping
 :::tip

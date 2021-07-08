@@ -9,7 +9,8 @@ What you'll learn
 ## System Requirements
 ### Node.js
 Testgram is a CLI application that is installed on your computer. We support:
-* [Node.js 12 or 14 and above.](https://nodejs.org/en/download/) You can install it on your platform [here](https://nodejs.org/en/download/).
+* [Node.js 14.13 and above with npm 6.17 and above](https://nodejs.org/en/download/) You can install it on your platform [here](https://nodejs.org/en/download/).
+We recommend using a tool like [`n`(Node Manager)](https://www.npmjs.com/package/n) to manage multiple node versions and node environments.
 
 ### Linux
 If you're using Linux, you'll want to have the required dependencies installed on your system.
@@ -25,16 +26,29 @@ yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2
 ```
 
 ## Installing
-The CLI is the primary interface for Testgram where you will run simulations, view discoveries & errors, and get helpful debugging/playback information. 
+The CLI is the primary interface for Testgram where you will run simulations, view events & errors, and get helpful debugging/playback information. 
 Use npm or Yarn to install the Testgram CLI on your computer.
+
+If you are not using node manager, use `sudo` in front of each command to correctly expose the `tg` global command. 
+
 ### Install Testgram via `npm`
 ```shell
-npm install -g testgram
+npm install -g @testgram/cli
+```
+
+Or if you are not using node manager, run:
+```shell
+sudo npm install -g @testgram/cli
 ```
 
 ### Install Testgram via `yarn`
 ```shell
-yarn global testgram
+yarn global @testgram/cli
+```
+
+Or if you are not using node manager, run:
+```shell
+sudo yarn global @testgram/cli
 ```
 
 This single command:
@@ -53,7 +67,7 @@ First, navigate to the root directory of the application corresponding to the wo
 ```shell
 cd ~/my/app
 ```
-Next, you can find your personal world init token as you are setting up your application, or generate a new one in the `World > Settings`. 
+Next, you can find your personal world init token as you are setting up your application or at the bottom of the `Players` list page on the web application. 
 Once you have your token in your application root directory, initialize your Testgram world by running:
 ```shell
 tg init $PERSONAL_WORLD_TOKEN
