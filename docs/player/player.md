@@ -32,7 +32,8 @@ Creating smaller players ensures that each player is specialized and has the too
 the respective area of your application. Subsequently, it makes interpreting results and debugging much easier. 
 It's the same reason we don't write all our code in one file anymore.
 
-If you're concerned about typing in the same rules over and over, there's also a way to i[nherit field rules from other players](rules) too!
+In fact, you can actually run multiple players together in one simulation by just appending more player handles at the end of the `tg sim` command. 
+For example: `tg sim @player1 @player2`.
 :::
 
 ## Naming a Player

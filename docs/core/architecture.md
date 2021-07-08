@@ -56,7 +56,7 @@ As developers, we saw that the most basic things in testing were really hard.
 We've spent a lot of time getting the little things right so you don't have to:
 * We build data & AI driven selectors, so if the element is on the page, we can (*almost*) always find it.
 * Testgram can replay the steps to recreate any event we've captured, live.
-* You can run any simulation across multiple browsers.
+* You can run any simulation across multiple browsers (coming soon).
 * Testgram interprets the DOM like a human does, so we never have arbitrary time-based waits for loads, APIs, or selectors. This means
   your simulations run *really* fast.
 * ... and so much more!
