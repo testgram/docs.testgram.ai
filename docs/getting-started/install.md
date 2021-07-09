@@ -7,9 +7,9 @@ What you'll learn
 :::
 
 ## System Requirements
-### Node.js
+### Node.js (All Platforms)
 Testgram is a CLI application that is installed on your computer. We support:
-* [Node.js 14.13 and above with npm 6.17 and above](https://nodejs.org/en/download/) You can install it on your platform [here](https://nodejs.org/en/download/).
+* [**Node.js 14.15 and above with npm 6.17 and above**](https://nodejs.org/en/download/) You can install it on your platform [here](https://nodejs.org/en/download/).
 We recommend using a tool like [`n`(Node Manager)](https://www.npmjs.com/package/n) to manage multiple node versions and node environments.
 
 ### Linux
@@ -25,7 +25,7 @@ CentOS
 yum install -y gcc gcc-c++ make cmake xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib
 ```
 
-### Windows 
+### Windows
 On Windows OS, due to Windows security, Windows Firewall may restrict to use of the `Node.js JavaScript Runtime` and the `Node.js: Server-side Javascript`.
 *When prompted, make sure to allow Windows Firewall to use these apps.*
 
