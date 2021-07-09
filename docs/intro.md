@@ -28,7 +28,7 @@ Testgram supports 30+ frameworks including Angular, React, Vue, Next.js, Angular
 ## Where does Testgram run?
 A fundamental goal of testing is early detection. 
 Testgram is built to run early and often in your workflow: starting on your local machine, CI pipelines, 
-intermediate QA/staging environments, or even production.
+intermediate QA/staging environments, or really, *anywhere*.
 
 ## Feedback (or come join us)!
 We're making Testgram better every day, and we 💙 hearing your feedback! 

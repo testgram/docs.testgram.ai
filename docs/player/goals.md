@@ -51,8 +51,7 @@ Making a single Player test every API end-point or URL will make it difficult to
 
 ## Checkout Cindy's Goals (Example)
 These goals for Cindy can be expressed on the Player page as:
-* [URL] /#/cart/checkout
-* [API] /validate/address
+![](/img/player/cindy.png)
 
 This expresses Cindy's intent to test all of the different ways that users would interact with the checkout page, 
 with an explicit emphasis on the journeys around entering an address that would call the `/validate/address` endpoint. 

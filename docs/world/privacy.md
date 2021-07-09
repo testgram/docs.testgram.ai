@@ -26,8 +26,7 @@ Here's a non-exhaustive list of the types of data we collect:
 * API Request & Response URLs
 * API Request / Response Schemas: Just the keys of the json, not the values
 * Element level selectors
-* ***Only** if you are collecting data through the `tg map` function in the command line, 
-  we will additionally collect the form fill text and keystrokes as well. Again, this only happens when you are in the browser created by Testgram via `tg map`*
+* *Only if you are collecting data through the `tg map` function in the command line, we will additionally collect the form fill text and keystrokes as well. Again, this only happens when you are in the browser created by Testgram via `tg map`.*
 
 ### Browser Data
 * Device type
@@ -61,7 +60,7 @@ Testgram production data is both processed and stored within Amazon Web Serviceâ
 All Amazon data centers that process Testgram data are located in the US. 
 Amazonâ€™s data centers are world-renowned for their state-of-the-art security systems. 
 
-If our script collects data from your customers in the EU or are located in the EU, you will need to sign a Data Processing Agreement (DPA) with Testgram to allow for the transfer of data to these US data centers.
+Currently, we store all our data in the US. If we are collecting data from your customers (end users) in the EU, you will need to sign a Data Processing Agreement (DPA) with Testgram to authorize the transfer of data to these US data centers.
 
 ## Do I need to inform my users that their sessions are being recorded?
 When you sign up for Testgram, you agree that you have obtained all necessary approvals and/or permissions to use the Testgram Services and that your use of Testgram does not violate your own privacy policy or any applicable laws.

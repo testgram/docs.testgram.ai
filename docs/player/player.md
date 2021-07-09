@@ -21,7 +21,7 @@ and anything else necessary to simulate around those goals.
 You can create a Player through the [Testgram Web Application](https://run.testgram.ai) on your `World` page.
 
 A Player has three key components:
-* **Name**: The name and subsequent handle by which you will deploy this player.
+* [**Name**](#naming-a-player): The name and subsequent handle by which you will deploy this player.
 * [**Goals**](goals): URLs or APIs that the Player is supposed to target their testing around. 
 * [**Rules**](rules): A set of rules (most often field rules) that tell the Player how to test those areas.
 For example, if we're testing the login page, rules provide a declarative way to tell us what username and password to use.
@@ -38,11 +38,13 @@ For example: `tg sim @player1 @player2`.
 
 ## Naming a Player
 We found that giving a name to our players helps us imagine them as personas testing our applications.
+
 For example, when filling out the field rules for "Checkout Cindy" we would ask ourselves,
 "What would Cindy type into the email field as she is checking out?" and "Which credit card number would she use?". 
 As a result, it helped us build a cohesive Player that can simulate multiple journeys.
 
 *Not to mention, naming your Players makes everything just that much more fun.*
+Do not use characters such as `@`, or `\` in the player name, which will break your ability to use them in the CLI. This will be enforced soon too.
 
 ## Checkout Cindy (Example)
 We often use a demo player called **"Checkout Cindy"** who is built to test the breadth of ways that people checkout in our demo app.
