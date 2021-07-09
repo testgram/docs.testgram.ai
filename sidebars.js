@@ -47,7 +47,7 @@ module.exports = {
           items: [
               'player/player',
               'player/goals',
-              // 'player/rules'
+              'player/rules'
           ],
       },
       // {
