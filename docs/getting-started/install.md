@@ -29,6 +29,17 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 You're now all set to [install Testgram](#install-testgram-via-npm)!
 
+:::caution M1 Macs
+Node versions <=14 do not work on Apple Silicon (M1) machines because the
+ARM architecture is not supported by those node versions.
+
+If you're on an M1 Mac, we recommend using the future LTS version of Node.js (v16) which will be transitioning to Active LTS starting in October 2021.
+*Instead of installing Node v14*, install Node v16 (only for M1 Macs) during the [installation](#install-testgram-via-npm) by running:
+```shell
+nvm install 16
+```
+:::
+
 ### Linux
 Install [`nvm`](https://github.com/nvm-sh/nvm#install--update-script) by running:
 
@@ -79,7 +90,7 @@ Use npm or Yarn to install the Testgram CLI on your computer.
 **If you are not using node manager, use `sudo` in front of each command to correctly expose the `tg` global command.**
 
 ### Install Testgram via `npm`
-First ensure your `node --version` is >= 14.15.2. You get on the latest version of Node 14 by running:
+First ensure your `node --version` is >= 14.15.2. You can get on the current latest LTS version of Node by running:
 
 ```shell
 nvm install 14
@@ -114,7 +125,7 @@ tg doctor
 If everything is working properly, you should see: 
 ```text
 Diagnosing Installation...
-Communicating with http://localhost:17511
+Communicating with https://sim.testgram.ai
 Acquire Simulator: passed
 Open Chromium Browser: passed
 Open Secure Tunnel: passed
