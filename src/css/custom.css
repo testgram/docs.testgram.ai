@@ -34,3 +34,7 @@ html[data-theme='dark'] {
   --ifm-color-primary: #50AEFF;
   --ifm-color-primary-dark: #50AEFF;
 }
+
+.admonition-caution {
+  color: black;
+}
