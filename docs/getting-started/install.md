@@ -69,36 +69,30 @@ yum install -y gcc gcc-c++ make cmake xorg-x11-server-Xvfb gtk2-devel gtk3-devel
 You're now all set to [install Testgram](#install-testgram-via-npm)!
 
 ### Windows
-`nvm` is not supported on Windows but, but we've found an [alternative version manager that happens to be the "The npm/Microsoft/Google recommended Node.js version manager for Windows."](https://github.com/coreybutler/nvm-windows).
+`nvm` is not supported on Windows but, but we've found an [alternative version manager that happens to be "The npm/Microsoft/Google recommended Node.js version manager for Windows."](https://github.com/coreybutler/nvm-windows).
 
-[Download the latest installer](https://github.com/coreybutler/nvm/releases) (comes with an uninstaller) and install windows-nvm.
-
-***Additional Notes***
-On Windows OS, due to Windows security, Windows Firewall may restrict to use of the `Node.js JavaScript Runtime` and the `Node.js: Server-side Javascript`.
-*When prompted, make sure to allow Windows Firewall to use these apps.*
-
-Otherwise, you can navigate to `Start > Windows Security > Firewall & Network Protection Settings` and in the list of `Allowed apps and features` check both `Node.js JavaScript Runtime` and the `Node.js: Server-side Javascript`.
-
-`Start > Windows Security > Firewall & Network Protection Settings` |  `Allowed apps and features`
-:-------------------------:|:-------------------------:
-![](/img/windows/windows-1.png)  |  ![](/img/windows/windows-2.png)
+[Download the latest installer (`nvm-setup.zip`)](https://github.com/coreybutler/nvm/releases) and install windows-nvm.
 
 ## Installing
 The CLI is the primary interface for Testgram where you will run simulations, view events & errors, and get helpful debugging/playback information. 
 Use npm or Yarn to install the Testgram CLI on your computer.
 
-**If you are not using node manager, use `sudo` in front of each command to correctly expose the `tg` global command.**
-
-### Install Testgram via `npm`
 First ensure your `node --version` is >= 14.15.2. You can get on the current latest LTS version of Node by running:
-
+Ensure you are running the latest version of node via `nvm` by running:
 ```shell
-nvm install 14
+nvm install 14.17.3
 ```
 
+### Install Testgram via `npm`
 Now to install Testgram, run:
 ```shell
 npm install -g @testgram/cli
+```
+
+### Install Testgram via `yarn`
+If you would like to use `yarn` instead of `npm`, run:
+```shell
+yarn global add @testgram/cli
 ```
 
 This single command:
