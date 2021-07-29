@@ -1,23 +1,23 @@
 # Part 0 - Installations and system requirements:
 
 ## For Mac
-###[ ] Install nvm and link it to the appropriate context (if you have an M1 mac, you will need at version 16 or higher)  (Link →)
-###[ ] Install the most recent version of node.js (Link →)
-###[ ] Install Testgram via npm (Link →) or yarn (Link →)
-###[ ] Verify you've installed Testgram and the necessary dependencies correctly by running ‘tg doctor’ (Link →)
+### [ ] Install nvm and link it to the appropriate context (if you have an M1 mac, you will need at version 16 or higher)  (Link →)
+### [ ] Install the most recent version of node.js (Link →)
+### [ ] Install Testgram via npm (Link →) or yarn (Link →)
+### [ ] Verify you've installed Testgram and the necessary dependencies correctly by running ‘tg doctor’ (Link →)
 
 ## For Linux
-###[ ] Install nvm and link it to the appropriate context (Link →)
-###[ ] Install the required dependencies (Ubuntu/Debian or CentOS) (Link →)
-###[ ] Install the most recent version of node.js (Link →)
-###[ ] Install Testgram via npm (Link →) or yarn (Link →)
-###[ ] Verify you've installed Testgram and the necessary dependencies correctly by running ‘tg doctor’ (Link →)
+### [ ] Install nvm and link it to the appropriate context (Link →)
+### [ ] Install the required dependencies (Ubuntu/Debian or CentOS) (Link →)
+### [ ] Install the most recent version of node.js (Link →)
+### [ ] Install Testgram via npm (Link →) or yarn (Link →)
+### [ ] Verify you've installed Testgram and the necessary dependencies correctly by running ‘tg doctor’ (Link →)
 
 ## For Windows
-###[ ] Download the latest installer (nvm-setup.zip) and install windows-nvm. (Link →)
-###[ ] Install the most recent version of node.js (Link →)
-###[ ] Install Testgram via npm (Link →) or yarn (Link →)
-###[ ] Verify you've installed Testgram and the necessary dependencies correctly by running ‘tg doctor’ (Link →)
+### [ ] Download the latest installer (nvm-setup.zip) and install windows-nvm. (Link →)
+### [ ] Install the most recent version of node.js (Link →)
+### [ ] Install Testgram via npm (Link →) or yarn (Link →)
+### [ ] Verify you've installed Testgram and the necessary dependencies correctly by running ‘tg doctor’ (Link →)
 
 
 # Part 1 - Onboarding:
