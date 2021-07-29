@@ -8,14 +8,14 @@
 #### [ ] Install Testgram via npm [(Link →)](/getting-started/install/#install-testgram-via-npm) or yarn [(Link →)](/getting-started/install/#install-testgram-via-yarn)
 #### [ ] Verify you've installed Testgram and the necessary dependencies correctly by running ‘tg doctor’ [(Link →)](/getting-started/install/#verifying-your-installation)
 
-### For Linux
+## For Linux
 #### [ ] Install nvm and link it to the appropriate context [(Link →)](/getting-started/install/#Linux)
 #### [ ] Install the required dependencies (Ubuntu/Debian or CentOS) [(Link →)](/getting-started/install/#Linux)
 #### [ ] Install the most recent version of node.js [(Link →)](/getting-started/install/#installing)
 #### [ ] Install Testgram via npm [(Link →)](/getting-started/install/#install-testgram-via-npm) or yarn [(Link →)](/getting-started/install/#install-testgram-via-yarn)
 #### [ ] Verify you've installed Testgram and the necessary dependencies correctly by running ‘tg doctor’ [(Link →)](/getting-started/install/#verifying-your-installation)
 
-### For Windows
+## For Windows
 #### [ ] Download the latest installer (nvm-setup.zip) and install windows-nvm. [(Link →)](/getting-started/install/#Windows)
 #### [ ] Install the most recent version of node.js [(Link →)](/getting-started/install/#installing)
 #### [ ] Install Testgram via npm [(Link →)](/getting-started/install/#install-testgram-via-npm) or yarn [(Link →)](/getting-started/install/#install-testgram-via-yarn)
