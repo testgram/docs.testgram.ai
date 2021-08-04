@@ -21,7 +21,7 @@ module.exports = {
         label: '⭐ Getting Started',
         items: [
             'getting-started/install',
-            // 'getting-started/demo-world'
+            'getting-started/tutorial'
         ],
       },
       {
