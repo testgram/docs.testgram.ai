@@ -21,7 +21,7 @@ module.exports = {
         label: '⭐ Getting Started',
         items: [
             'getting-started/install',
-            // 'getting-started/demo-world'
+            'getting-started/tutorial'
         ],
       },
       {
@@ -37,33 +37,26 @@ module.exports = {
           label: '🗺 World',
           items: [
               'world/world',
+              'world/teach',
               'world/data',
-              'world/privacy',
           ],
       },
       {
           type: 'category',
-          label: '🧍‍♀️Players',
+          label: '🧍‍♀️ Players',
           items: [
               'player/player',
               'player/goals',
               'player/rules'
           ],
       },
-      // {
-      //     type: 'category',
-      //     label: '🚩Events',
-      //     items: [
-      //         'event/event',
-      //     ],
-      // }
-    ],
-    marketSidebar: [
-        "market",
-        "market/jserror",
-        "market/unhandledrejection",
-        "market/consoleerror",
-        "market/text_overflow",
-        "market/broken_link"
+      {
+        type: 'category',
+        label: '🚀 Simulations',
+        items: [
+            'simulation/train',
+            'simulation/simulate'
+        ],
+    }
     ]
 };

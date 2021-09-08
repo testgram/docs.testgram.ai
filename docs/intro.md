@@ -3,17 +3,16 @@ id: intro
 slug: /
 ---
 
-# 👋 Welcome to Testgram 
+# 👋 Welcome to Testgram
 
-Testgram, at its core is an AI-enabled web-testing framework that helps you **build and deploy scalable simulations**. 
-The goal of these simulations is to help you **quickly** test your application in all the ways that it’s really used by users 
-**without** having to author, manage, or maintain specific test cases. 
-It’s built to address the key pain points we noticed developers have around web testing. 
+At its core, Testgram is an **AI enabled, web-testing** platform that helps you **build and deploy scalable user simulations**. 
+These simulations helps you answer one simple question: **"Will the code I wrote today affect my users tomorrow?"**.
 
-Imagine the tools we use to monitor events and issues in production: Sentry, DataDog, Splunk, etc. 
-Testgram helps you find, capture, and debug these types of events before they ever reach production.
+The goal of these simulations is to help you *quickly* test your application in all the ways that it’s really used by users 
+**without having to author, manage, or maintain specific test cases**. It’s built to address the key pain points we noticed developers have around web testing.
 
 If you are new here, you should check out our:
+* [Getting Started Tutorial](getting-started/tutorial)
 * [Installation Guide](getting-started/install)
 * [Core Concepts](core/concepts)
 

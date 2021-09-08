@@ -6,11 +6,10 @@ We take a very different approach to testing. Testgram differs from traditional 
    While an individual script may test one specific path through an application, a single simulation tests 
    can tens or even hundreds of unique paths. This is important because it allows us to test modern applications, 
    in *all the ways that they're really used*.
-2. **Testgram takes an event monitoring approach to understanding quality.**
+2. **Testgram tests the critical paths in your application.**
    There are no assertions in Testgram. 
-   Instead during a simulation, Testgram watches and listens for a configured set of events that occur on the browser. 
-   These events can be errors, rejections, logs, formatting issues, performance issues, and can be customized / configured to
-   the events that you care about. 
+   When you train a Player, Testgram builds a baseline understanding of a few, impactful set of paths that your users take when interacting a specific area of your application (a goal).
+   When you simulate, these Players verify the same paths are still working. 
 
 Everything in our platform is built to help you easily create and deploy these simulations.
 In the end, our goal is to help you build confidence in your code through early detection.
@@ -24,7 +23,7 @@ To understand Testgram, here are some core concepts you'll need to know.
 
 ### World
 A [**World**](/world/world) is your application. 
-We continuously [collect data](/world/data) about how people are using your application to build a map of your World.
+We continuously [learn](/world/teach) about how people are using your application to build a map of your World.
 
 Your World naturally changes over time as new pages, APIs, or elements get introduced. 
 Testgram keeps up with your World through the data it collects.
@@ -34,21 +33,13 @@ In a video game, players are used to complete tasks and conquer levels.
 
 It's the same in Testgram! A [**Player**](/player/player) is a persona that has goals. These goals are expressed as URLs or APIs.
 
-At runtime, a Player with just a couple of goals can translate to tens, or sometimes even hundreds, of individual tests depending
+Players are trained using `tg train`. At train-time, a Player with just a couple of goals can translate to tens, or sometimes even hundreds, of individual tests depending
 on the way we've observed real users interacting with your site, the number of goals, and the size of your application.
 
 ### Simulation
-One or more Players run a [**Simulation**](/simulation/simulation).  Running a simulation often looks like running `tg sim @<player_name>` in your command line.
+One or more Players run a [**Simulation**](/simulation/simulate).  Running a simulation often looks like running `tg sim @<player_name>` in your command line.
 
 Simulations can run anywhere: from your local machine to CI pipelines and QA environments.
-
-### Event
-[**Events**](/event/event) are the issues that Players find as they are testing your application. 
-Events are not assertions, rather they're exactly what they sound like: events.
-
-Events can be anything: from Javascript Errors to something more subtle like a slow API response time.
-You can customize which events you're interested in for each simulation by installing [modules](/market), 
-or even create custom ones specific to your application.
 
 ## Summary
 Testgram is a very different way of testing.
@@ -57,10 +48,8 @@ The way we create a 'test', run a 'test', and get feedback looks very different 
    The World keeps learning your application and adjusts as changes are made.
 2. **Instead of writing a test, you create a [Player](/player/player).**
    Players run multiple tests based off their goals.
-3. **Instead of running a test, you run a [Simulation](/simulation/simulation).**
+3. **Instead of running a test, you run a [Simulation](/simulation/simulate).**
    Simulations are based on real user behavior and not a user story or assumed interactions.
-4. **Instead of assertions, we capture [Events](/event/event).**
-   You can focus on the errors that are critical to you like slow response times, Javascript errors, or broken links.
 
 
 

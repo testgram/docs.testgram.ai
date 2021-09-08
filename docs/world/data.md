@@ -1,95 +1,61 @@
-# Collecting Data
+# How Data Works at Testgram
 
-Data collection is the most important step for getting Testgram to be able to simulate usage on your application. 
-Similar to Google Analytics, Testgram has its own Javascript snippet.
+## tl;dr
+- We take our data practice *super* seriously.
+- Testgram is focused on aggregate data, not user-specific data. 
+- This means we observe that users are typing something that looks like an email address in the login page, not the actual email address itself.
+- The data we collect is de-identified.
+- Testgram generally collects DOM-level information, not user-level information. (eg. the structure of the page, element attributes, etc.)
+- We're really just developers trying to build something useful for ourselves and our dev community. We don't want your customer data.
+- **For description of our privacy practices, see our Privacy Policy**
 
-There are two ways to feed Testgram usage data. 
-The best part is that you don't have to choose. You can choose to do one or both at any time!
+## The Details: What data does Testgram collect?
 
-## What environments does Testgram need to collect data from?
+Testgram’s behavior modeling and learning systems try to build a high fidelity snapshot of your application’s steady-state usage. 
+To do this, Testgram requires you to insert a javascript snippet into your web application code. 
+Upon initialization, this snippet opens an encrypted web socket connection from the end user’s browser to Testgram’s servers to transport data.
 
-Each environment where your application is deployed is part of your World.
-Testgram will learn from any combination (or all) of the environments you allow.
+Here's a non-exhaustive list of the types of data we collect:
+
+### Usage Data
+* Clicks 
+* Mouse Movements 
+* Scrolling
+* Form Fills & Text: all information is [SHA-256](https://en.wikipedia.org/wiki/SHA-2) hashed on device before reaching Testgram’s servers. 
+  This means we cannot reverse engineer what data was originally on the page.
+* Visited Page URLs
+* API Request & Response URLs
+* API Request / Response Schemas: Just the keys of the json, not the values
+* Element level selectors
+* *Only if you are collecting data through the `tg map` function in the command line, we will additionally collect the form fill text and keystrokes as well. Again, this only happens when you are in the browser created by Testgram via `tg map`.*
+
+### Browser Data
+* Device type
+* Viewfinder size
+* Script errors: Javascript errors thrown on the browser during user sessions
+* User Agent
+* Operating system
+* Referrers
+* Session duration
 
 
-:::tip
-We recommend collecting data from every environment you're comfortable with.
-You can always start collecting data from lower (dev / staging / QA) environments and later graduate to additionally collecting
-production data.
+Testgram offers several custom configuration settings to exercise even more granular control over the way that Testgram anonymizes sensitive information.
 
-[Keep reading](#what-data-does-testgram-collect) our [data practices](privacy) page to learn more about the type of data we collect.
-:::
+## Why does Testgram require this data?
+Testgram combines the behavior data to create high fidelity machine learning and statistical models that behave the way that your real users behave with your site.
+These machine learning models are then used to simulate real user behavior on your pre-production environments so that we can test your application at scale and with the same rigor.
 
+## Where is this data stored?
+Testgram encrypts all data entering or leaving Testgram infrastructure with TLS/HTTPS. 
+All of our databases (all located in AWS) are encrypted at rest. 
+Each account’s data is logically separated, and access to data is protected by authentication and authorization controls.
+Testgram production data is both processed and stored within Amazon Web Service’s data centers. 
+All Amazon data centers that process Testgram data are located in the US. 
+Amazon’s data centers are world-renowned for their state-of-the-art security systems.
 
-## Option One: Automatic Mapping (Recommended)
-Each world has a unique snippet associated with it so that we can associate the data we collect with your world. 
-You can find your world's snippet in the `World > Settings`. It will look something like: 
-```html
-<script src="https://sim.testgram.ai/js/world/{YOUR_WORLD_ID}" type="text/javascript"></script>
-```
-Directly inject the Javascript snippet as the first tag in the `<head>` of your `index.html` file.
-The same snippet can be used across all environments (eg. you can use the same snippet in your local, QA, staging, or even production environments).
+## Do I need to inform my users that their sessions are being recorded?
+When you sign up for Testgram, you agree that you have obtained all necessary approvals and/or permissions to use the Testgram Services and that your use of Testgram does not violate your own privacy policy or any applicable laws.
 
-This option is recommended because it allows Testgram to passively learn new functionality as you, your team, your company, or even your real users are using your application. 
-It's the best way to ensure that the data we collect remains fresh and your simulations and players are most effective.
-
-### Do I have to collect data in production for this to work?
-**Absolutely not!!!** Testgram needs data for how *people* use your application. We work great collecting data from 
-your dev, QA, or any other pre-prod environments.
-
-### Ignoring Certain Domains
-If you want to collect data from all environments *except* a certain environment, you can ignore certain domains.
-If you'd like this configured, please reach out to us at `support@testgram.ai`. We're building a setting page soon 
-so you can configure this yourself.
-
-## Option Two: Manual Mapping
-:::tip
-In fact, the manual option is actually just a utility wrapper around the Javascript snippet to make the process of getting started easier.
-When you run `tg map`, we just spin up a browser with the Javascript snippet pre-injected. This is why you can always use either option - or both!
-:::
-If you don't have the right approvals or don't want to inject the Javascript snippet directly into your codebase, 
-you can easily get your feet wet with Testgram using manual mapping.
-
-Ensure you have the [cli installed on your local machine](/getting-started/install). 
-
-Now run `tg map` in your command line to spin up a browser with the snippet pre-injected.
-
-We recommend using `tg map` as a way to seed Testgram with information about your application. 
-Try to do short sprints no longer than a few minutes showing Testgram how to use certain parts of the application you intend to test.
-
-## What now? 
-Once you've collected some data, it's time to design your first simulation by creating a [Player](/player/player).
-
-## What data does Testgram collect?
-
-As we were building the data infrastructure at Testgram, we took every conceivable measure to make sure that **we don't collect *any* end user data**.
-As an AI product, we care about understanding aggregate patterns of behavior, not the behavior or information of any specific user.
-If you want to find out more, [check out our page on what data we collect and how we store it](privacy).
-
-## What does it do with this data?
-AI systems are always data-hungry, and Testgram is training these systems to understand, interact with, and test your application for you.
-We use this data to:
-* Understand what your application looks like (eg. understand how your application is laid out, which pages/URLs exist, which APIs exist, and how they relate)
-* Learn to replicate user behavior (eg. how a typical user in your application would edit their profile, login, or generate a report)
-* Adapt to your changing application (eg. learn how to interact with new or changed features)
-* Help you make better and more complete Players (eg. autocomplete goals, suggested rules, etc.)
-* ... and much more!
-
-In short, the data we collect keeps our system alive.
-
-## Example: Loo Loo Lemmon Co.
-Let's say you're a developer building the shopping page at LooLooLemmon Co.
-
-Your application probably lives on a couple of different environments:
-* As a developer, your local build is deployed on `localhost:1234`.
-* Your staging site where your QA tests is `staging.lll.com`.
-* Your production site (eg. where your real users go) is `lll.com`.
-
-These environments do not have anything to do with where you can run simulations.
-The simulation URL does not have to be one of the locations we collect data from (it just has to be the same application).
-
-For example, you could collect real user data from `lll.com` and run simulations on `localhost:1234`. 
-You could also collect data from development and QA usage by collecting data on `localhost:1234` and `staging.lll.com` and run
-simulations on `lll.com`.
-
-At Testgram, we collect data from our local dev builds, staging, and production.
+Fortunately, you may already have a Testgram-compliant privacy policy. 
+If you use virtually any other analytics or customer-experience service – including Google Analytics, MixPanel, Tealeaf, Omniture, Intercom, Optimizely, and hundreds of others – you have likely already reviewed your privacy policy to ensure it covers these types of products. 
+That’s because the techniques used by these other popular platforms to collect your customer’s data are fundamentally no different from Testgram’s.
