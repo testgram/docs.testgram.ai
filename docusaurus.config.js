@@ -41,18 +41,12 @@ module.exports = {
         href: 'https://docs.testgram.ai/', // Default to `siteConfig.baseUrl`.
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Docs',
-        },
-        {
-          type: 'doc',
-          docId: 'market',
-          position: 'left',
-          label: 'Market',
-        },
+        // {
+        //   type: 'doc',
+        //   docId: 'intro',
+        //   position: 'left',
+        //   label: 'Docs',
+        // },
         {
           href: 'https://run.testgram.ai',
           label: 'Get Started',

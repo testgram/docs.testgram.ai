@@ -22,7 +22,7 @@ Testgram is built for change. It's built to constantly learn and adapt with your
 so the tests we run are always up to date.
 
 * If a new feature comes out, you don't have to teach us your whole application again. 
-  We learn which parts are different and which parts are the same. End result: your Players don't break.
+  We learn which parts are different and which parts are the same. End result: your Players don't break that often.
 * If one team member teaches us something, we remember it so that you don't have to reteach us. 
 * Testgram can passively learn, so as people use your application, Testgram keeps getting better.
 * As a Player runs more often, that Player learns to be more efficient. 
