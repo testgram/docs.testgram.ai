@@ -25,6 +25,7 @@ In the Testgram dashboard, add a world and assign it a name. Again, this world i
 ### Connecting the `tg` CLI
 Once you've successfully created a world and linked your environments, you will be presented with a `tg init <TOKEN>` token. This is your way to connect your world to the CLI. Copy that command and run it in your CLI.
 
+![tg init](/img/gif/init.gif)
 
 ## ⛹️ Building a Player
 A Player is a specialized persona that tests a *specific area* of your application in **many different ways**. 
@@ -75,10 +76,14 @@ In the likely case that this is the first time running a Player, you will need t
 
 Run ‘tg train” to seed them with enough simulation experiences to load the algorithm and reach the confidence bound for a successful path being executed.
 
+![tg train](/img/gif/train.gif)
+
 Note: The ‘tg train’ process can also be used when you want to reset your critical paths in the future.
 
 ### Start a simulation with `tg sim`
 Now that you’ve built out and trained your player, it’s time to drop them into the environment with `tg sim @<PLAYER_NAME>`! Your player will run through your application in the paths that were identified as critical during the training phase.
+
+![tg sim](/img/gif/sim.gif)
 
 The default status of a player is to run in headless mode, as to not interrupt your current workflow. However, if you want to watch the player make its way through your application simply include “--watch” to the end of the `tg sim` command.
 

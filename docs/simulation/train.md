@@ -4,6 +4,8 @@ Training is a way to baseline a Player on a specific state of your application.
 You can liken this step to the process of "writing tests".
 During the training phase, a Player learns a set of critical paths that mimic real user behavior around its goals.
 
+![tg train](/img/gif/train.gif)
+
 ## Starting a Train Session
 You can train a Player by running 
 ```bash
