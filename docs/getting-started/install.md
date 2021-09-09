@@ -137,6 +137,8 @@ Once you have your token in your application root directory, initialize your Tes
 tg init $PERSONAL_WORLD_TOKEN
 ```
 
+![tg init](/img/gif/init.gif)
+
 In this step, the CLI creates a `tgconfig.json` in the same parent directory of the `node_modules` folder.
 This file that can, and should be committed up to your project repo (if you want other people using this!).
 
