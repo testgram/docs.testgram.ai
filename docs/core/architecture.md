@@ -40,7 +40,7 @@ Testing has always been a major pain in the ![](/img/space.svg "Space Dinosaur")
 
 As developers ourselves, we wanted to build something that was easy to get started with, and something that was easy to make our own.
 Testgram is built to be easy to get started with, 
-yet highly customizable with pluggable & custom events and Player [Rules](/player/rules).
+yet highly customizable with pluggable & custom events and Player [Input Fields](/player/inputs).
 
 ### Testgram is data-driven.
 Unlike many web testing frameworks, data and machine learning are woven into the fabric of our approach.

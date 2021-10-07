@@ -9,7 +9,7 @@ At its core, Testgram is an **AI enabled, web-testing** platform that helps you 
 These simulations helps you answer one simple question: **"Will the code I wrote today affect my users tomorrow?"**.
 
 The goal of these simulations is to help you *quickly* test your application in all the ways that it’s really used by users 
-**without having to author, manage, or maintain specific test cases**. It’s built to address the key pain points we noticed developers have around web testing.
+**without having to author, manage, or maintain specific tests**. It’s built to address the key pain points we noticed developers have around web testing.
 
 If you are new here, you should check out our:
 * [Getting Started Tutorial](getting-started/tutorial)
@@ -18,6 +18,15 @@ If you are new here, you should check out our:
 
 ## Who uses Testgram?
 Our users are typically developers or QA engineers building web applications using modern JavaScript frameworks.
+
+## What makes Testgram different?
+At Testgram we believe that the best products in the world are built in places
+that remove barriers between creators and consumers.
+
+We built Testgram to bring users to the center of how we test our applicaiton. 
+In Testgram, you build simulated users that execute a series of checkpoints called Players. And you build Players instead of tests. This allows you to focus on documenting what you care about testing, while Testgram figures out how.
+
+Think if analytics met testing.
 
 ## Will Testgram work for me? 
 Testgram learns from user interactions on the browser and simulates on the browser too. 
