@@ -1,6 +1,6 @@
 # Launching a Simulation
 
-Simulations are where Players run the paths they were [trained](train) to execute.
+Simulations are where Players run through their checkpoints (/player/checkpoints).
 
 ## Start a Simulation
 You can start a simulation by running:
