@@ -1,19 +1,20 @@
 # Introduction to Players
+A Player is a simulated user that tests one specific journey through your application.
+This journey is defined through a series of [checkpoints](checkpoints), and influenced through [input fields](inputs).
 
-Players are specialized personas in your application that test specific areas of your application in many different ways.
+A Player passes if it can run through its checkpoints, and fails if it cannot.
 
-Players are the core of Testgram. Broadly, they are the representation of your testing intent.
+Players are the core of Testgram. Broadly, they are the representation of your users, and therefore your testing intent.
 **It's your way to tell us what you care about testing, and how you'd like it tested.**
 
-You can influence and customize a Player in two ways: through [Goals](goals) and through [Rules](rules).
+![player](/img/gif/player-create.gif)
 
 :::tip Player ≠ Test Script
-A Player is not a single test case or a test script!
-In fact, at runtime, one player can translate to tens, sometimes even hundreds of individual tests
-depending on the number of goals your player has and the size of your application.
-
+A Player is not a test script! Players adaptively execute based on the environment they're in, and the data they've observed. 
+In fact, we **never** have a pre-compiled set of steps in the background to execute. 
+Instead, we try to **mimic** real user behavior in order to execute these checkpoints. So even if the data changes a bit, the application changes, or the intermediate steps change, as long as we have data we can usually adapt to a changing environment.
 This is the power of Testgram!
-You tell us what to test (goals), and we'll translate it to the actual clicks, types, drags, keystrokes,
+You tell us what to test (checkpoints), and we'll translate it to the actual clicks, types, drags, keystrokes,
 and anything else necessary to simulate around those goals.
 :::
 
@@ -22,8 +23,8 @@ You can create a Player through the [Testgram Web Application](https://run.testg
 
 A Player has three key components:
 * [**Name**](#naming-a-player): The name and subsequent handle by which you will deploy this player.
-* [**Goals**](goals): URLs or APIs that the Player is supposed to target their testing around. 
-* [**Rules**](rules): A set of rules (most often field rules) that tell the Player how to test those areas.
+* [**Checkpoints**](checkpoints): URLs or Elements that the Player is supposed to target their testing around. 
+* [**Input Fields**](inputs): A set of input fields that tell the Player how to test those areas.
 For example, if we're testing the login page, rules provide a declarative way to tell us what username and password to use.
 
 :::danger Anti-pattern
@@ -45,7 +46,3 @@ As a result, it helped us build a cohesive Player that can simulate multiple jou
 
 *Not to mention, naming your Players makes everything just that much more fun.*
 Do not use characters such as `@`, or `\` in the player name, which will break your ability to use them in the CLI. This will be enforced soon too.
-
-## Checkout Cindy (Example)
-We often use a demo player called **"Checkout Cindy"** who is built to test the breadth of ways that people checkout in our demo app.
-She is referenced on the [goals](goals#checkout-cindys-goals-example) and [rules](rules#checkout-cindys-goals-example) page.

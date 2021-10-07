@@ -69,7 +69,7 @@ yum install -y gcc gcc-c++ make cmake xorg-x11-server-Xvfb gtk2-devel gtk3-devel
 You're now all set to [install Testgram](#install-testgram-via-npm)!
 
 ### Windows
-`nvm` is not supported on Windows but, but we've found an [alternative version manager that happens to be "The npm/Microsoft/Google recommended Node.js version manager for Windows."](https://github.com/coreybutler/nvm-windows).
+`nvm` is not supported on Windows, but we've found an [alternative version manager that happens to be "The npm/Microsoft/Google recommended Node.js version manager for Windows."](https://github.com/coreybutler/nvm-windows).
 
 [Download the latest installer (`nvm-setup.zip`)](https://github.com/coreybutler/nvm/releases) and install windows-nvm.
 
@@ -137,7 +137,7 @@ Once you have your token in your application root directory, initialize your Tes
 tg init $PERSONAL_WORLD_TOKEN
 ```
 
-![tg init](/img/gif/init.gif)
+<!-- ![tg init](/img/gif/init.gif) -->
 
 In this step, the CLI creates a `tgconfig.json` in the same parent directory of the `node_modules` folder.
 This file that can, and should be committed up to your project repo (if you want other people using this!).

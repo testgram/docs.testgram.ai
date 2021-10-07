@@ -46,15 +46,14 @@ module.exports = {
           label: '🧍‍♀️ Players',
           items: [
               'player/player',
-              'player/goals',
-              'player/rules'
+              'player/checkpoints',
+              'player/inputs'
           ],
       },
       {
         type: 'category',
         label: '🚀 Simulations',
         items: [
-            'simulation/train',
             'simulation/simulate'
         ],
     }

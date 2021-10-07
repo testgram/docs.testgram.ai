@@ -2,20 +2,17 @@
 Testgram is a new way of testing web applications using artificial intelligence.
 
 We take a very different approach to testing. Testgram differs from traditional testing in two key ways: 
-1. **Testgram tests through simulations, not scripts.** We use data-driven simulations as a way to test your web application. 
-   While an individual script may test one specific path through an application, a single simulation tests 
-   can tens or even hundreds of unique paths. This is important because it allows us to test modern applications, 
-   in *all the ways that they're really used*.
+1. **Testgram tests through simulated users, not scripts.** We use data-driven simulations as a way to test your web application. In Testgram we help you design and simulate real user behavior as the primary lever to ensure quality. This is important because it allows us to bring real user voices and experiences to the core of how we test our software.
 2. **Testgram tests the critical paths in your application.**
    There are no assertions in Testgram. 
-   When you train a Player, Testgram builds a baseline understanding of a few, impactful set of paths that your users take when interacting a specific area of your application (a goal).
-   When you simulate, these Players verify the same paths are still working. 
+   When you build a Player, Testgram builds a baseline understanding of the impactful set of paths that your users take when interacting with your application.
+   When you simulate, these Players mimic real user journies in new environments to ensure your application is working correctly. 
 
 Everything in our platform is built to help you easily create and deploy these simulations.
 In the end, our goal is to help you build confidence in your code through early detection.
 
 ## Testgram is Simple
-The magic of Testgram is simple. We don't use user stories, click paths, or scripts in the background. 
+The magic of Testgram is simple. We don't use scripts in the background. 
 **We use real usage data.**
 
 Testgram looks really different from many testing tools you may be used to. 
@@ -25,16 +22,15 @@ To understand Testgram, here are some core concepts you'll need to know.
 A [**World**](/world/world) is your application. 
 We continuously [learn](/world/teach) about how people are using your application to build a map of your World.
 
-Your World naturally changes over time as new pages, APIs, or elements get introduced. 
+Your World naturally changes over time as new pages, elements, or features get introduced. 
 Testgram keeps up with your World through the data it collects.
 
 ### Player
 In a video game, players are used to complete tasks and conquer levels. 
 
-It's the same in Testgram! A [**Player**](/player/player) is a persona that has goals. These goals are expressed as URLs or APIs.
+It's the same in Testgram! A [**Player**](/player/player) is a simulated user that has a series of [checkpoints](/player/checkpoints).
 
-Players are trained using `tg train`. At train-time, a Player with just a couple of goals can translate to tens, or sometimes even hundreds, of individual tests depending
-on the way we've observed real users interacting with your site, the number of goals, and the size of your application.
+Players can be simulated on any environment, and fail if they cannot execute their checkpoints.
 
 ### Simulation
 One or more Players run a [**Simulation**](/simulation/simulate).  Running a simulation often looks like running `tg sim @<player_name>` in your command line.
