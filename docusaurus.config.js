@@ -14,6 +14,12 @@ module.exports = {
       apiKey: 'd21e560a9a1d7e7d9e67f91ce6b70c51',
       indexName: 'testgram',
     },
+    gtag: {
+      // You can also use your "G-" Measurement ID here.
+      trackingID: 'GTM-5T6DH5S',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
     colorMode: {
       defaultMode: 'light',
       // Hides the switch in the navbar
